@@ -1,9 +1,8 @@
 ---
 import '@/styles/globals.css'
-import FeedbackForm from "@/components/feedback-form"
-import { LoginForm } from '@/components/login-form'
----
+import { Dashboard } from '@/components/dashboard'
 
+---
 <html lang="en">
 	<head>
 		<meta charset="utf-8" />
@@ -13,6 +12,6 @@ import { LoginForm } from '@/components/login-form'
 		<title>Astro</title>
 	</head>
 	<body>
-		<h1>Astro</h1>
+    <Dashboard client:load />
 	</body>
 </html>
