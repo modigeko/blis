@@ -7,7 +7,7 @@ export const POST: APIRoute = async ({ request }) => {
 
   try {
     // Your login logic here
-    if (email === 'user@example.com' && password === 'password') {
+    if (email === 'user@blis.com' && password === 'password') {
       return new Response(JSON.stringify({ success: true }), { status: 200 });
     } else {
       return new Response(JSON.stringify({ success: false, message: 'Login failed' }), { status: 401 });
