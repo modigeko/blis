@@ -28,7 +28,7 @@ export function LoginForm() {
     if (result.success) {
       console.log('Login successful');
       // setResponseMessage("Login successfula");
-      window.location.href = '/'; // Redirect on success
+      window.location.href = '/dashboard'; // Redirect on success
     } else {
       console.log('Login failed');
       setResponseMessage(result.message);
@@ -54,7 +54,7 @@ export function LoginForm() {
                   id="email"
                   name="email"
                   type="email"
-                  placeholder="m@example.com"
+                  placeholder="username@domain.com"
                   autoComplete="email"
                   required
                 />
@@ -63,7 +63,14 @@ export function LoginForm() {
                 <div className="flex items-center">
                   <Label htmlFor="password">Password</Label>
                 </div>
-                <Input id="password" name="password" type="password" autoComplete="current-password" required />
+                <Input
+                  id="password"
+                  name="password"
+                  type="password"
+                  placeholder="Password"
+                  autoComplete="current-password"
+                  required
+                />
               </div>
               <Button type="submit" className="w-full">
                 Login
