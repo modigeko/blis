@@ -32,7 +32,7 @@ All commands are run from the root of the project, from a terminal:
 
 # Project Structure
 ```
-(base) $ tree -L 4 --prune -I 'node_modules'
+$ tree -L 4 --prune -I 'node_modules'
 .
 ├── astro.config.mjs
 ├── components.json
