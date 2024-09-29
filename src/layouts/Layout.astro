@@ -3,9 +3,11 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
+    <title>BLIS - Business Location Intelligence System</title>
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <link href="/src/styles/globals.css" rel="stylesheet">
-		<title>BLIS - Business Location Intelligence System</title>
+    <style is:global>
+      @import './src/styles/globals.css';
+    </style>
   </head>
   <body>
     <slot />
